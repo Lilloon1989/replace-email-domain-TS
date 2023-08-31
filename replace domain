@@ -1,0 +1,11 @@
+def replace_domain(email,new_domain):
+    user = email[:email.index("@"):]
+    old_domain = email[email.index("@"):]
+    if old_domain == new_domain:
+        print("Current: ", email)
+    print("New Email: ", user + new_domain)
+
+email = input("What is your email? ")
+new_domain = input("What is new domain? ")
+
+replace_domain(email, new_domain)
